@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.5em 2em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+
+a:hover {
+  color: cyan;
+  transition: 0.2s;
+}
+
+.container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Hero content */
+.hero {
+  height: 75vh;
+  background-image: url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.hero-content {
+  height: 50%;
+  color: white;
+}
+.hero-content .head {
+  margin-bottom: 0.5rem;
+}
+
+.hero-content h1 {
+  margin-bottom: 0.5rem;
+}
+
+.head {
+  width: 200px;
+  height: auto;
+  border-radius: 1000px;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+/* GSU CS Department */
+.department {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.department img {
+  width: 400px;
+  padding: 1rem;
+}
+
+/* Assignment div */
+.assignments {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #f2f2f2;
+}
+
+.assignments h2 {
+  padding-bottom: 1rem;
+}
+
+table {
+  width: 80%;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+/* Bio div */
+.bio {
+  text-align: center;
+  padding: 2rem;
+}
+
+.bio-content {
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.bio-content .card {
+  margin: 0 0.5rem;
+}
+
+.card {
+  height: 250px;
+  width: 400px;
+  list-style-position: inside;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  padding-bottom: 1rem;
+}
+
+/* gsu, computer science, suffer, lover */
+span {
+  font-weight: 600;
+  color: red;
+}
+
+/* quote */
+blockquote author {
+  display: block;
+  clear: both;
+  font-size: 0.875rem;
+  margin-left: 2.4rem;
+  font-style: oblique;
+}
+
+blockquote::before {
+  font-family: Times New Roman, Times, Arial;
+  content: open-quote;
+  font-size: 2.2em;
+  font-weight: 600;
+  float: left;
+  margin-top: 0;
+  margin-right: 0.2rem;
+  width: 1.2rem;
+}
+
+blockquote::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.quote {
+  color: #555;
+}
+
+/*footer*/
+footer {
+  padding: 2rem 0;
+  display: flex;
+  margin: 0 2rem;
+  justify-content: space-between;
+}
